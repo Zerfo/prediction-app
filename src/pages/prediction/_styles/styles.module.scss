@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  height: 100vh;
+  width: 100vw;
+
+  & > .title {
+  }
+
+  & > .textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+    padding: 8px;
+  }
+
+  & > .predictions {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    & > .prediction {
+      padding: 6px 12px;
+      width: fit-content;
+      cursor: pointer;
+      border: 1px solid #b6b6b6b6;
+      border-radius: 8px;
+
+      &:hover {
+        color: #4096ff;
+        border-color: #4096ff;
+        background: #ffffff;
+      }
+    }
+  }
+}
